@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.ncd
+OUTFILE=C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

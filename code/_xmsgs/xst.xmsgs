@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 297: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\seg.v" Line 77: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 299: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wAddr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\ipcore_dir\IMem.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">IMem</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 330: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 423: Assignment to <arg fmt="%s" index="1">PCPlus_EX</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 444: Assignment to <arg fmt="%s" index="1">RegDst_EX</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 481: Assignment to <arg fmt="%s" index="1">DMemRead_MEM</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\ipcore_dir\DMem.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">DMem</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 488: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">9</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">sw&lt;7:5&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnl</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnd</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">btnu</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v</arg>&quot; line <arg fmt="%s" index="2">407</arg>: Output port &lt;<arg fmt="%s" index="3">PCPlus_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">IDEX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v</arg>&quot; line <arg fmt="%s" index="2">407</arg>: Output port &lt;<arg fmt="%s" index="3">RegDst_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">IDEX</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v</arg>&quot; line <arg fmt="%s" index="2">461</arg>: Output port &lt;<arg fmt="%s" index="3">DMemRead_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">EXMEM</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_1_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_2_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_3_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_5_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_7_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_9_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_10_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_11_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_13_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_15_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_17_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_18_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_19_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_21_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_23_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_25_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_26_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_27_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_29_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt2[3]_cnt2[3]_DLATCH_31_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">empty&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">empty&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">empty&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">empty&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;30&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;29&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;28&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;27&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;26&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;25&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;24&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;23&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;22&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;21&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;20&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;19&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;17&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;16&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;15&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;14&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;13&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;12&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;11&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;10&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;8&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">alu_out&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">RsCMPRt&lt;1:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_70_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_71_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">DMemWrite</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">DMemRead</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUControl&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUControl&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUControl&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUControl&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">ALUControl&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_79_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_80_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_81_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_83_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_84_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_85_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Op[5]_Op[5]_DLATCH_86_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">PCSrc&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">PCSrc&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">RegWrite</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">res&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">res&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">dff1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">IDEX</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">dff10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">IDEX</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">dff14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">EXMEM</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff13</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ALUControl_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataout_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dff6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_31</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_30</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_28</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_29</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_27</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_26</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_25</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_24</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_23</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_21</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_22</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_20</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_19</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_18</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_17</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_16</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ALUPCPlus</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_31</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_30</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_28</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_29</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_27</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_26</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_25</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_24</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_23</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_21</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_22</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_20</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_19</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_18</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_17</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_16</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu_out_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">BranchALU</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n1347</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n1380</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0172</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_segments</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ALUControl_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">EXMEM/dff14/dataout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="new" >This design contains one or more registers/latches that are directly
+incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
+either a register or latch described with both an asynchronous set and
+asynchronous reset, or a register or latch described with an asynchronous
+set or reset which however has an initialization value of the opposite 
+polarity (i.e. asynchronous reset with an initialization value of 1).
+ While this circuit can be built, it creates a sub-optimal implementation
+in terms of area, power and performance. For a more optimal implementation
+Xilinx highly recommends one of the following:
+
+       1) Remove either the set or reset from all registers and latches
+          if not needed for required functionality
+       2) Modify the code in order to produce a synchronous set
+          and/or reset (both is preferred)
+       3) Ensure all registers have the same initialization value as the
+          described asynchronous set or reset polarity
+       4) Use the -async_to_sync option to transform the asynchronous
+          set/reset to synchronous operation
+          (timing simulation highly recommended when using this option)
+</msg>
+
+<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">control</arg>: <arg fmt="%d" index="2">5</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">seg</arg>: <arg fmt="%d" index="2">16</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Op[5]_Op[5]_DLATCH_70_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DMemRead&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Op[5]_Op[5]_DLATCH_71_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Op[5]_Op[5]_DLATCH_86_q&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff13/dataout_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff5/dataout_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff6/dataout_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff1/dataout_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IDEX/dff10/dataout_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">compare1/res_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_16</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_17</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_18</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_19</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_20</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_22</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_21</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_23</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_24</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_25</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_26</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_27</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_29</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_28</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_30</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_31</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">alu/alu_out_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_16</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_17</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_18</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_19</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_20</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_22</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_21</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_23</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_24</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_25</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_26</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_27</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_29</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_28</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_30</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_31</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">BranchALU/alu_out_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_16</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_1</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_17</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_2</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_18</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_19</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_4</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_3</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_20</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_5</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_6</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_22</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_21</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_7</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_23</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_24</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_9</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_8</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_25</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_10</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_26</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_11</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_27</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_12</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_13</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_29</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_28</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_14</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_30</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_31</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">ALUPCPlus/alu_out_15</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">IFID/dff1/dataout_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">DFFPC/dataout_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_10&gt; &lt;IDEX/dff6/dataout_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">17 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff4/dataout_16&gt; &lt;IDEX/dff4/dataout_17&gt; &lt;IDEX/dff4/dataout_18&gt; &lt;IDEX/dff4/dataout_19&gt; &lt;IDEX/dff4/dataout_20&gt; &lt;IDEX/dff4/dataout_21&gt; &lt;IDEX/dff4/dataout_22&gt; &lt;IDEX/dff4/dataout_23&gt; &lt;IDEX/dff4/dataout_24&gt; &lt;IDEX/dff4/dataout_25&gt; &lt;IDEX/dff4/dataout_26&gt; &lt;IDEX/dff4/dataout_27&gt; &lt;IDEX/dff4/dataout_28&gt; &lt;IDEX/dff4/dataout_29&gt; &lt;IDEX/dff4/dataout_30&gt; &lt;IDEX/dff4/dataout_31&gt; &lt;IDEX/dff5/dataout_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_6&gt; &lt;IDEX/dff6/dataout_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_7&gt; &lt;IDEX/dff6/dataout_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_8&gt; &lt;IDEX/dff6/dataout_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">IDEX/dff4/dataout_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;IDEX/dff5/dataout_9&gt; &lt;IDEX/dff6/dataout_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">control/Op[5]_Op[5]_DLATCH_86_q</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;control/Op[5]_Op[5]_DLATCH_71_q&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

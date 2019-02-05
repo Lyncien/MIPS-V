@@ -1,0 +1,16 @@
+Release 14.7 - WebTalk (P.20131013)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=92916B29E8BA4203A2ADDCA577DFF1B3
+ProjectIteration=2
+
+WebTalk Summary
+----------------
+INFO:WebTalk:2 - WebTalk is enabled.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:5 - C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html

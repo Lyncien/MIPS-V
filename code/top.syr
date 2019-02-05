@@ -1,0 +1,1519 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\dff.v" into library work
+Parsing module <dff>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\seg.v" into library work
+Parsing module <seg>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\regfile_copy_DMem.v" into library work
+Parsing module <regfile_copy_DMem>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\regfile.v" into library work
+Parsing module <regfile>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\mux4.v" into library work
+Parsing module <mux4>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\mux.v" into library work
+Parsing module <mux>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\MEMWB.v" into library work
+Parsing module <MEMWB>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\ipcore_dir\IMem.v" into library work
+Parsing module <IMem>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\ipcore_dir\DMem.v" into library work
+Parsing module <DMem>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\IFID.v" into library work
+Parsing module <IFID>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\IDEX.v" into library work
+Parsing module <IDEX>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\hazard.v" into library work
+Parsing module <hazard>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\forward.v" into library work
+Parsing module <forward>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\EXMEM.v" into library work
+Parsing module <EXMEM>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\control.v" into library work
+Parsing module <control>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\compare.v" into library work
+Parsing module <compare>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+
+Elaborating module <debounce>.
+WARNING:HDLCompiler:413 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 297: Result of 8-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <seg>.
+WARNING:HDLCompiler:413 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\seg.v" Line 77: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <regfile_copy_DMem>.
+WARNING:HDLCompiler:189 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 299: Size mismatch in connection of port <wAddr>. Formal port size is 5-bit while actual signal size is 32-bit.
+
+Elaborating module <mux4>.
+
+Elaborating module <dff>.
+
+Elaborating module <alu>.
+
+Elaborating module <IMem>.
+WARNING:HDLCompiler:1499 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\ipcore_dir\IMem.v" Line 39: Empty module <IMem> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 330: Size mismatch in connection of port <addra>. Formal port size is 8-bit while actual signal size is 32-bit.
+
+Elaborating module <IFID>.
+
+Elaborating module <control>.
+
+Elaborating module <mux(WIDTH=5)>.
+
+Elaborating module <regfile>.
+
+Elaborating module <compare>.
+
+Elaborating module <hazard>.
+
+Elaborating module <IDEX>.
+
+Elaborating module <dff(WIDTH=5)>.
+
+Elaborating module <dff(WIDTH=1)>.
+
+Elaborating module <dff(WIDTH=2)>.
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 423: Assignment to PCPlus_EX ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 444: Assignment to RegDst_EX ignored, since the identifier is never used
+
+Elaborating module <forward>.
+
+Elaborating module <mux>.
+
+Elaborating module <EXMEM>.
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 481: Assignment to DMemRead_MEM ignored, since the identifier is never used
+
+Elaborating module <DMem>.
+WARNING:HDLCompiler:1499 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\ipcore_dir\DMem.v" Line 39: Empty module <DMem> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" Line 488: Size mismatch in connection of port <addra>. Formal port size is 9-bit while actual signal size is 32-bit.
+
+Elaborating module <MEMWB>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v".
+WARNING:Xst:647 - Input <sw<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btnr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btnl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btnd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btnu> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" line 407: Output port <PCPlus_out> of the instance <IDEX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" line 407: Output port <RegDst_out> of the instance <IDEX> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\top.v" line 461: Output port <DMemRead_out> of the instance <EXMEM> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <Led>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\debounce.v".
+    Found 1-bit register for signal <out>.
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit adder for signal <cnt[31]_GND_2_o_add_2_OUT> created at line 32.
+    Found 1-bit comparator equal for signal <n0000> created at line 30
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <debounce> synthesized.
+
+Synthesizing Unit <seg>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\seg.v".
+    Found 2-bit register for signal <cnt>.
+    Found 32-bit register for signal <clk_50000000>.
+    Found 4-bit register for signal <cnt2>.
+    Found 32-bit register for signal <clk_25>.
+    Found 2-bit adder for signal <cnt[1]_GND_3_o_add_4_OUT> created at line 69.
+    Found 32-bit adder for signal <clk_25[31]_GND_3_o_add_5_OUT> created at line 72.
+    Found 4-bit adder for signal <cnt2[3]_GND_3_o_add_9_OUT> created at line 77.
+    Found 32-bit adder for signal <clk_50000000[31]_GND_3_o_add_12_OUT> created at line 81.
+    Found 16x7-bit Read Only RAM for signal <segments>
+    Found 16x9-bit Read Only RAM for signal <_n0172>
+    Found 4-bit 4-to-1 multiplexer for signal <sel> created at line 104.
+    Found 1-bit 4-to-1 multiplexer for signal <data4<3>> created at line 40.
+    Found 1-bit 4-to-1 multiplexer for signal <data4<2>> created at line 40.
+    Found 1-bit 4-to-1 multiplexer for signal <data4<1>> created at line 40.
+    Found 1-bit 4-to-1 multiplexer for signal <data4<0>> created at line 40.
+    Found 1-bit 8-to-1 multiplexer for signal <cnt2[3]_X_24_o_Mux_63_o> created at line 87.
+    Found 1-bit 8-to-1 multiplexer for signal <cnt2[3]_X_20_o_Mux_55_o> created at line 87.
+    Found 1-bit 8-to-1 multiplexer for signal <cnt2[3]_X_22_o_Mux_59_o> created at line 87.
+    Found 1-bit 8-to-1 multiplexer for signal <cnt2[3]_X_26_o_Mux_67_o> created at line 87.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_1_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_2_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_3_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<15>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_5_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<14>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_7_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<13>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_9_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<12>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_10_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_11_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<11>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_13_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<10>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_15_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<9>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_17_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<8>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_18_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_19_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<7>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_21_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<6>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_23_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<5>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_25_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<4>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_26_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_27_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<3>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_29_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<2>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <cnt2[3]_cnt2[3]_DLATCH_31_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<1>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <empty<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data16<0>> created at line 85
+WARNING:Xst:737 - Found 1-bit latch for signal <empty<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <empty<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <empty<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  70 D-type flip-flop(s).
+	inferred  24 Latch(s).
+	inferred 125 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <seg> synthesized.
+
+Synthesizing Unit <regfile_copy_DMem>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\regfile_copy_DMem.v".
+    Found 1024-bit register for signal <n0041[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <rDout> created at line 32.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  33 Multiplexer(s).
+Unit <regfile_copy_DMem> synthesized.
+
+Synthesizing Unit <mux4>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\mux4.v".
+        WIDTH = 32
+    Found 32-bit 4-to-1 multiplexer for signal <out> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux4> synthesized.
+
+Synthesizing Unit <dff>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\dff.v".
+        WIDTH = 32
+    Found 32-bit register for signal <dataout>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <dff> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\alu.v".
+    Found 32-bit subtractor for signal <alu_a[31]_alu_b[31]_sub_2_OUT> created at line 52.
+    Found 32-bit adder for signal <alu_a[31]_alu_b[31]_add_0_OUT> created at line 51.
+    Found 32-bit shifter logical left for signal <alu_b[31]_alu_a[31]_shift_left_17_OUT> created at line 69
+    Found 32-bit shifter logical right for signal <alu_b[31]_alu_a[31]_shift_right_18_OUT> created at line 70
+    Found 32-bit shifter arithmetic right for signal <alu_b[31]_alu_a[31]_shift_right_19_OUT> created at line 71
+    Found 1-bit 16-to-1 multiplexer for signal <_n0149> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0182> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0215> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0248> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0281> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0314> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0347> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0380> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0413> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0446> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0479> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0512> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0545> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0578> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0611> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0644> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0677> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0710> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0743> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0776> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0809> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0842> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0875> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0908> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0941> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n0974> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n1007> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n1040> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n1073> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n1106> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n1139> created at line 49.
+    Found 1-bit 16-to-1 multiplexer for signal <_n1172> created at line 49.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_out<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit comparator equal for signal <alu_a[31]_alu_b[31]_equal_10_o> created at line 61
+    Found 32-bit comparator greater for signal <alu_a[31]_alu_b[31]_LessThan_11_o> created at line 61
+    Found 1-bit comparator greater for signal <alu_a[31]_alu_b[31]_LessThan_13_o> created at line 64
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Latch(s).
+	inferred   3 Comparator(s).
+	inferred  36 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <IFID>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\IFID.v".
+    Summary:
+	no macro.
+Unit <IFID> synthesized.
+
+Synthesizing Unit <control>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\control.v".
+WARNING:Xst:647 - Input <RsCMPRt<1:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32x2-bit Read Only RAM for signal <_n1347>
+    Found 32x3-bit Read Only RAM for signal <_n1380>
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_70_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_71_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DMemWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DMemtoReg> created at line 86
+WARNING:Xst:737 - Found 1-bit latch for signal <DMemRead>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUControl<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUControl<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUControl<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUControl<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUControl<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_79_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_80_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_81_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <ALUSrcBSel<1>> created at line 86
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_83_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <ALUSrcBSel<0>> created at line 86
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_84_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_85_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <ALUSrcASel> created at line 86
+WARNING:Xst:737 - Found 1-bit latch for signal <Op[5]_Op[5]_DLATCH_86_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PCSrc<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <RegDst> created at line 86
+WARNING:Xst:737 - Found 1-bit latch for signal <PCSrc<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RegWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  19 Latch(s).
+	inferred  25 Multiplexer(s).
+	inferred   5 Tristate(s).
+Unit <control> synthesized.
+
+Synthesizing Unit <mux_1>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\mux.v".
+        WIDTH = 5
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_1> synthesized.
+
+Synthesizing Unit <regfile>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\regfile.v".
+    Found 1024-bit register for signal <n0044[1023:0]>.
+    Found 32-bit 32-to-1 multiplexer for signal <rDout1> created at line 35.
+    Found 32-bit 32-to-1 multiplexer for signal <rDout2> created at line 36.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+Unit <regfile> synthesized.
+
+Synthesizing Unit <compare>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\compare.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <res<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <res<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator equal for signal <a[31]_b[31]_equal_1_o> created at line 32
+    Found 32-bit comparator greater for signal <b[31]_a[31]_LessThan_2_o> created at line 33
+    Found 32-bit comparator greater for signal <a[31]_b[31]_LessThan_3_o> created at line 34
+    Summary:
+	inferred   2 Latch(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <compare> synthesized.
+
+Synthesizing Unit <hazard>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\hazard.v".
+    Found 5-bit comparator equal for signal <RegWtaddr_EX[4]_Rs_ID[4]_equal_1_o> created at line 30
+    Found 5-bit comparator equal for signal <RegWtaddr_EX[4]_Rt_ID[4]_equal_2_o> created at line 30
+    Summary:
+	inferred   2 Comparator(s).
+Unit <hazard> synthesized.
+
+Synthesizing Unit <IDEX>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\IDEX.v".
+    Summary:
+	no macro.
+Unit <IDEX> synthesized.
+
+Synthesizing Unit <dff_1>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\dff.v".
+        WIDTH = 5
+    Found 5-bit register for signal <dataout>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <dff_1> synthesized.
+
+Synthesizing Unit <dff_2>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\dff.v".
+        WIDTH = 1
+    Found 1-bit register for signal <dataout>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <dff_2> synthesized.
+
+Synthesizing Unit <dff_3>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\dff.v".
+        WIDTH = 2
+    Found 2-bit register for signal <dataout>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <dff_3> synthesized.
+
+Synthesizing Unit <forward>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\forward.v".
+    Found 5-bit comparator equal for signal <n0003> created at line 32
+    Found 5-bit comparator equal for signal <RegWtaddr_WB[4]_Rs_EX[4]_equal_3_o> created at line 32
+    Found 5-bit comparator equal for signal <n0013> created at line 34
+    Found 5-bit comparator equal for signal <RegWtaddr_WB[4]_Rt_EX[4]_equal_8_o> created at line 34
+    Summary:
+	inferred   4 Comparator(s).
+Unit <forward> synthesized.
+
+Synthesizing Unit <mux>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\mux.v".
+        WIDTH = 32
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux> synthesized.
+
+Synthesizing Unit <EXMEM>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\EXMEM.v".
+    Summary:
+	no macro.
+Unit <EXMEM> synthesized.
+
+Synthesizing Unit <MEMWB>.
+    Related source file is "C:\Users\Administrator\Desktop\PipelineCPU_20180606_1.21\PipelineCPU_20180606_1.21\PipelineCPU\MEMWB.v".
+    Summary:
+	no macro.
+Unit <MEMWB> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port Read Only RAM                    : 1
+ 16x9-bit single-port Read Only RAM                    : 1
+ 32x2-bit single-port Read Only RAM                    : 1
+ 32x3-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 11
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 6
+ 32-bit subtractor                                     : 3
+ 4-bit adder                                           : 1
+# Registers                                            : 41
+ 1-bit register                                        : 14
+ 1024-bit register                                     : 2
+ 2-bit register                                        : 2
+ 32-bit register                                       : 16
+ 4-bit register                                        : 1
+ 5-bit register                                        : 6
+# Latches                                              : 143
+ 1-bit latch                                           : 143
+# Comparators                                          : 22
+ 1-bit comparator equal                                : 4
+ 1-bit comparator greater                              : 3
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 7
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 334
+ 1-bit 16-to-1 multiplexer                             : 96
+ 1-bit 2-to-1 multiplexer                              : 143
+ 1-bit 4-to-1 multiplexer                              : 4
+ 1-bit 8-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 78
+ 32-bit 32-to-1 multiplexer                            : 3
+ 32-bit 4-to-1 multiplexer                             : 4
+ 4-bit 4-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 9
+ 32-bit shifter arithmetic right                       : 3
+ 32-bit shifter logical left                           : 3
+ 32-bit shifter logical right                          : 3
+# Tristates                                            : 21
+ 1-bit tristate buffer                                 : 21
+# Xors                                                 : 3
+ 32-bit xor2                                           : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/IMem.ngc>.
+Reading core <ipcore_dir/DMem.ngc>.
+Loading core <IMem> for timing and area information for instance <IMem>.
+Loading core <DMem> for timing and area information for instance <DMem>.
+WARNING:Xst:1290 - Hierarchical block <dff1> is unconnected in block <IDEX>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <dff10> is unconnected in block <IDEX>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <dff14> is unconnected in block <EXMEM>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <dataout_11> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_12> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_13> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_14> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_15> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_16> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_17> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_18> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_19> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_20> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_21> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_22> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_23> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_24> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_25> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_26> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_27> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_28> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_29> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_30> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_31> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_4> (without init value) has a constant value of 0 in block <dff13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ALUControl_4> (without init value) has a constant value of 0 in block <control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_16> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_17> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_18> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_19> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_20> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_21> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_22> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_23> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_24> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_25> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_26> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_27> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_28> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_29> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_30> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_31> (without init value) has a constant value of 0 in block <dff5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_5> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_6> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_7> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_8> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_9> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataout_10> (without init value) has a constant value of 0 in block <dff6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <alu_out_15> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_31> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_30> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_14> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_28> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_29> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_13> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_12> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_27> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_11> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_26> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_10> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_25> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_8> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_9> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_24> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_23> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_7> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_21> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_22> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_6> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_5> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_20> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_3> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_4> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_19> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_18> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_2> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_17> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_1> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_16> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_0> is equivalent to a wire in block <ALUPCPlus>.
+WARNING:Xst:1294 - Latch <alu_out_15> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_31> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_30> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_14> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_28> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_29> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_13> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_12> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_27> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_11> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_26> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_10> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_25> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_8> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_9> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_24> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_23> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_7> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_21> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_22> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_6> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_5> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_20> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_3> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_4> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_19> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_18> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_2> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_17> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_1> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_16> is equivalent to a wire in block <BranchALU>.
+WARNING:Xst:1294 - Latch <alu_out_0> is equivalent to a wire in block <BranchALU>.
+
+Synthesizing (advanced) Unit <control>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1347> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 2-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(Op<5>,Op<2:3>,Op<1:0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n1380> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(Funct<3:2>,Funct<0>,Funct<5>,Funct<1>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <control> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debounce>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <debounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seg>.
+The following registers are absorbed into counter <clk_25>: 1 register on signal <clk_25>.
+The following registers are absorbed into counter <clk_50000000>: 1 register on signal <clk_50000000>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <cnt2>: 1 register on signal <cnt2>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0172> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 9-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cnt2>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segments> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <data4>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segments>      |          |
+    -----------------------------------------------------------------------
+Unit <seg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 16x9-bit single-port distributed Read Only RAM        : 1
+ 32x2-bit single-port distributed Read Only RAM        : 1
+ 32x3-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 8
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 3
+ 4-bit adder                                           : 1
+# Counters                                             : 5
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 3
+ 4-bit up counter                                      : 1
+# Registers                                            : 2510
+ Flip-Flops                                            : 2510
+# Comparators                                          : 22
+ 1-bit comparator equal                                : 4
+ 1-bit comparator greater                              : 3
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 7
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 1357
+ 1-bit 16-to-1 multiplexer                             : 96
+ 1-bit 2-to-1 multiplexer                              : 1167
+ 1-bit 32-to-1 multiplexer                             : 32
+ 1-bit 4-to-1 multiplexer                              : 4
+ 1-bit 8-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 46
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 4
+ 4-bit 4-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 9
+ 32-bit shifter arithmetic right                       : 3
+ 32-bit shifter logical left                           : 3
+ 32-bit shifter logical right                          : 3
+# Xors                                                 : 3
+ 32-bit xor2                                           : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <ALUControl_4> (without init value) has a constant value of 0 in block <control>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <EXMEM/dff14/dataout_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    res_0 in unit <compare>
+    res_1 in unit <compare>
+
+WARNING:Xst:2042 - Unit control: 5 internal tristates are replaced by logic (pull-up yes): ALUSrcASel, ALUSrcBSel<0>, ALUSrcBSel<1>, DMemtoReg, RegDst.
+WARNING:Xst:2042 - Unit seg: 16 internal tristates are replaced by logic (pull-up yes): data16<0>, data16<10>, data16<11>, data16<12>, data16<13>, data16<14>, data16<15>, data16<1>, data16<2>, data16<3>, data16<4>, data16<5>, data16<6>, data16<7>, data16<8>, data16<9>.
+
+Optimizing unit <dff> ...
+
+Optimizing unit <IDEX> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <seg> ...
+
+Optimizing unit <regfile_copy_DMem> ...
+
+Optimizing unit <control> ...
+INFO:Xst:2261 - The FF/Latch <Op[5]_Op[5]_DLATCH_70_q> in Unit <control> is equivalent to the following FF/Latch, which will be removed : <DMemRead> 
+INFO:Xst:2261 - The FF/Latch <Op[5]_Op[5]_DLATCH_71_q> in Unit <control> is equivalent to the following FF/Latch, which will be removed : <Op[5]_Op[5]_DLATCH_86_q> 
+
+Optimizing unit <regfile> ...
+
+Optimizing unit <compare> ...
+
+Optimizing unit <alu> ...
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_16> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_17> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_18> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_19> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_20> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_21> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_22> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_23> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_24> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_25> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_26> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_27> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff13/dataout_4> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_16> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_17> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_18> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_19> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_20> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_21> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_22> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_23> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_24> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_25> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_26> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_27> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff5/dataout_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_5> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_6> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_7> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IDEX/dff6/dataout_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff1/dataout_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IDEX/dff10/dataout_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <compare1/res_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_0> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_16> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_1> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_17> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_2> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_18> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_19> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_4> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_3> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_20> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_5> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_6> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_22> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_21> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_7> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_23> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_24> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_9> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_8> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_25> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_10> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_26> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_11> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_27> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_12> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_13> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_29> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_28> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_14> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_30> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_31> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <alu/alu_out_15> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_0> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_16> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_1> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_17> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_2> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_18> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_19> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_4> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_3> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_20> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_5> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_6> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_22> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_21> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_7> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_23> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_24> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_9> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_8> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_25> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_10> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_26> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_11> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_27> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_12> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_13> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_29> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_28> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_14> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_30> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_31> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <BranchALU/alu_out_15> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_0> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_16> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_1> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_17> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_2> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_18> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_19> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_4> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_3> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_20> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_5> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_6> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_22> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_21> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_7> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_23> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_24> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_9> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_8> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_25> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_10> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_26> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_11> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_27> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_12> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_13> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_29> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_28> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_14> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_30> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_31> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <ALUPCPlus/alu_out_15> is equivalent to a wire in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <IFID/dff1/dataout_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <DFFPC/dataout_10> of sequential type is unconnected in block <top>.
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_10> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <IDEX/dff5/dataout_10> <IDEX/dff6/dataout_4> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_11> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_11> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_12> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_12> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_13> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_13> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_14> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_14> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_15> in Unit <top> is equivalent to the following 17 FFs/Latches, which will be removed : <IDEX/dff4/dataout_16> <IDEX/dff4/dataout_17> <IDEX/dff4/dataout_18> <IDEX/dff4/dataout_19> <IDEX/dff4/dataout_20> <IDEX/dff4/dataout_21> <IDEX/dff4/dataout_22> <IDEX/dff4/dataout_23> <IDEX/dff4/dataout_24> <IDEX/dff4/dataout_25> <IDEX/dff4/dataout_26> <IDEX/dff4/dataout_27> <IDEX/dff4/dataout_28> <IDEX/dff4/dataout_29> <IDEX/dff4/dataout_30> <IDEX/dff4/dataout_31> <IDEX/dff5/dataout_15> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_0> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_1> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_2> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_3> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_4> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <IDEX/dff5/dataout_5> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_6> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <IDEX/dff5/dataout_6> <IDEX/dff6/dataout_0> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_7> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <IDEX/dff5/dataout_7> <IDEX/dff6/dataout_1> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_8> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <IDEX/dff5/dataout_8> <IDEX/dff6/dataout_2> 
+INFO:Xst:2261 - The FF/Latch <IDEX/dff4/dataout_9> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <IDEX/dff5/dataout_9> <IDEX/dff6/dataout_3> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <control/Op[5]_Op[5]_DLATCH_86_q> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <control/Op[5]_Op[5]_DLATCH_71_q> 
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 64.
+FlipFlop MEMWB/dff16/dataout_0 has been replicated 3 time(s)
+FlipFlop MEMWB/dff17/dataout_0 has been replicated 2 time(s)
+FlipFlop MEMWB/dff3/dataout_0 has been replicated 2 time(s)
+FlipFlop MEMWB/dff3/dataout_1 has been replicated 2 time(s)
+FlipFlop MEMWB/dff3/dataout_2 has been replicated 2 time(s)
+FlipFlop MEMWB/dff3/dataout_3 has been replicated 1 time(s)
+FlipFlop MEMWB/dff3/dataout_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2466
+ Flip-Flops                                            : 2466
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4979
+#      GND                         : 3
+#      INV                         : 8
+#      LUT1                        : 134
+#      LUT2                        : 71
+#      LUT3                        : 1099
+#      LUT4                        : 225
+#      LUT5                        : 1301
+#      LUT6                        : 1475
+#      MUXCY                       : 305
+#      MUXF7                       : 143
+#      VCC                         : 3
+#      XORCY                       : 212
+# FlipFlops/Latches                : 2509
+#      FD                          : 1
+#      FDCE                        : 2048
+#      FDE                         : 2
+#      FDR                         : 99
+#      FDRE                        : 316
+#      LD                          : 27
+#      LDC                         : 12
+#      LDP                         : 4
+# RAMS                             : 2
+#      RAMB16BWER                  : 1
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 6
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2509  out of  18224    13%  
+ Number of Slice LUTs:                 4313  out of   9112    47%  
+    Number used as Logic:              4313  out of   9112    47%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4450
+   Number with an unused Flip Flop:    1941  out of   4450    43%  
+   Number with an unused LUT:           137  out of   4450     3%  
+   Number of fully used LUT-FF pairs:  2372  out of   4450    53%  
+   Number of unique control sets:        19
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  19  out of    232     8%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     32     6%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                     | Clock buffer(FF name)                                                                                                         | Load  |
+---------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+-------+
+debounce/out                                                                     | NONE(rst)                                                                                                                     | 1     |
+clk                                                                              | BUFGP                                                                                                                         | 2467  |
+seg1/Mram__n01728(seg1/Mram__n017281:O)                                          | BUFG(*)(seg1/cnt2[3]_cnt2[3]_DLATCH_3_q)                                                                                      | 24    |
+control/Op[5]_Funct[5]_Select_181_o(control/Mmux_Op[5]_Funct[5]_Select_181_o11:O)| NONE(*)(control/PCSrc_0)                                                                                                      | 9     |
+control/Op[5]_Funct[5]_Select_97_o(control/Op[5]_Funct[5]_Select_97_o1:O)        | NONE(*)(control/RegWrite)                                                                                                     | 7     |
+DMem/N1                                                                          | NONE(DMem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 1     |
+compare2/res_0_G(compare2/res_0_G:O)                                             | NONE(*)(compare2/res_0)                                                                                                       | 2     |
+compare1/res_0_G(compare1/res_0_G:O)                                             | NONE(*)(compare1/res_0)                                                                                                       | 1     |
+---------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+-------+
+(*) These 5 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 10.353ns (Maximum Frequency: 96.587MHz)
+   Minimum input arrival time before clock: 7.766ns
+   Maximum output required time after clock: 7.184ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'debounce/out'
+  Clock period: 3.380ns (frequency: 295.883MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.380ns (Levels of Logic = 0)
+  Source:            rst (FF)
+  Destination:       rst (FF)
+  Source Clock:      debounce/out rising
+  Destination Clock: debounce/out rising
+
+  Data Path: rst to rst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q           2234   0.447   2.503  rst (rst)
+     FDR:R                     0.430          rst
+    ----------------------------------------
+    Total                      3.380ns (0.877ns logic, 2.503ns route)
+                                       (25.9% logic, 74.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.353ns (frequency: 96.587MHz)
+  Total number of paths / destination ports: 634314 / 4827
+-------------------------------------------------------------------------
+Delay:               10.353ns (Levels of Logic = 9)
+  Source:            MEMWB/dff3/dataout_0_1 (FF)
+  Destination:       EXMEM/dff1/dataout_6 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk falling
+
+  Data Path: MEMWB/dff3/dataout_0_1 to EXMEM/dff1/dataout_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.447   0.981  MEMWB/dff3/dataout_0_1 (MEMWB/dff3/dataout_0_1)
+     LUT6:I0->O            1   0.203   0.684  forward/RegRdout1Sel_Forward_EX<0>4_SW0 (N107)
+     LUT6:I4->O            4   0.203   0.788  forward/RegRdout1Sel_Forward_EX<0>4 (forward/RegRdout1Sel_Forward_EX<0>4)
+     LUT3:I1->O           15   0.203   0.982  forward/RegRdout1Sel_Forward_EX<0>5_1 (forward/RegRdout1Sel_Forward_EX<0>5)
+     LUT6:I5->O            7   0.205   1.138  MUXALUSrcA/Mmux_out210 (ALUSrcA_EX<10>)
+     LUT6:I0->O            5   0.203   0.962  alu/out4 (alu/out3)
+     LUT6:I2->O           13   0.203   0.933  alu/out7_3 (alu/out7_2)
+     LUT5:I4->O            1   0.205   0.924  alu/Mmux__n1213293_SW3 (N246)
+     LUT6:I1->O            1   0.203   0.580  alu/Mmux__n0974_8 (alu/Mmux__n0974_8)
+     LUT6:I5->O            1   0.205   0.000  alu/alu_op<3>251 (ALUResult_EX<6>)
+     FDRE:D                    0.102          EXMEM/dff1/dataout_6
+    ----------------------------------------
+    Total                     10.353ns (2.382ns logic, 7.971ns route)
+                                       (23.0% logic, 77.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              3.867ns (Levels of Logic = 2)
+  Source:            btns (PAD)
+  Destination:       debounce/cnt_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btns to debounce/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.721  btns_IBUF (btns_IBUF)
+     LUT6:I4->O           32   0.203   1.291  debounce/Mcount_cnt_val321 (debounce/Mcount_cnt_val)
+     FDR:R                     0.430          debounce/cnt_0
+    ----------------------------------------
+    Total                      3.867ns (1.855ns logic, 2.012ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'seg1/Mram__n01728'
+  Total number of paths / destination ports: 2688 / 16
+-------------------------------------------------------------------------
+Offset:              7.766ns (Levels of Logic = 7)
+  Source:            sw<1> (PAD)
+  Destination:       seg1/cnt2[3]_cnt2[3]_DLATCH_3_q (LATCH)
+  Destination Clock: seg1/Mram__n01728 falling
+
+  Data Path: sw<1> to seg1/cnt2[3]_cnt2[3]_DLATCH_3_q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           256   1.222   2.431  sw_1_IBUF (sw_1_IBUF)
+     LUT6:I0->O            1   0.203   0.827  regfile_copy_DMem/mux1031_81 (regfile_copy_DMem/mux1031_81)
+     LUT6:I2->O            1   0.203   0.000  regfile_copy_DMem/mux1031_3 (regfile_copy_DMem/mux1031_3)
+     MUXF7:I1->O           4   0.140   0.931  regfile_copy_DMem/mux1031_2_f7 (out_show<16>)
+     LUT6:I2->O            1   0.203   0.580  seg1/Mmux_cnt2[3]_X_10_o_Mux_35_o21 (seg1/Mmux_cnt2[3]_X_10_o_Mux_35_o2)
+     LUT5:I4->O            1   0.205   0.580  seg1/Mmux_cnt2[3]_X_10_o_Mux_35_o22 (seg1/Mmux_cnt2[3]_X_10_o_Mux_35_o21)
+     LUT5:I4->O            1   0.205   0.000  seg1/Mmux_cnt2[3]_X_10_o_Mux_35_o23 (seg1/cnt2[3]_X_10_o_Mux_35_o)
+     LD:D                      0.037          seg1/cnt2[3]_cnt2[3]_DLATCH_7_q
+    ----------------------------------------
+    Total                      7.766ns (2.418ns logic, 5.348ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              7.184ns (Levels of Logic = 4)
+  Source:            seg1/cnt_1 (FF)
+  Destination:       seg7<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: seg1/cnt_1 to seg7<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             13   0.447   1.277  seg1/cnt_1 (seg1/cnt_1)
+     LUT5:I0->O            4   0.203   0.788  seg1/Mmux_data4<1>12 (seg1/Mmux_data4<1>11)
+     LUT3:I1->O            4   0.203   0.912  seg1/Mmux_data4<1>13 (seg1/data4<1>)
+     LUT6:I3->O            1   0.205   0.579  seg1/Mram_segments21 (seg7_2_OBUF)
+     OBUF:I->O                 2.571          seg7_2_OBUF (seg7<2>)
+    ----------------------------------------
+    Total                      7.184ns (3.629ns logic, 3.555ns route)
+                                       (50.5% logic, 49.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'seg1/Mram__n01728'
+  Total number of paths / destination ports: 228 / 11
+-------------------------------------------------------------------------
+Offset:              6.889ns (Levels of Logic = 4)
+  Source:            seg1/cnt2[3]_cnt2[3]_DLATCH_10_q (LATCH)
+  Destination:       seg7<4> (PAD)
+  Source Clock:      seg1/Mram__n01728 falling
+
+  Data Path: seg1/cnt2[3]_cnt2[3]_DLATCH_10_q to seg7<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.498   0.931  seg1/cnt2[3]_cnt2[3]_DLATCH_10_q (seg1/cnt2[3]_cnt2[3]_DLATCH_10_q)
+     LUT5:I1->O            4   0.203   0.788  seg1/Mmux_data4<1>12 (seg1/Mmux_data4<1>11)
+     LUT3:I1->O            4   0.203   0.912  seg1/Mmux_data4<1>13 (seg1/data4<1>)
+     LUT6:I3->O            1   0.205   0.579  seg1/Mram_segments21 (seg7_2_OBUF)
+     OBUF:I->O                 2.571          seg7_2_OBUF (seg7<2>)
+    ----------------------------------------
+    Total                      6.889ns (3.680ns logic, 3.209ns route)
+                                       (53.4% logic, 46.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'debounce/out'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.521ns (Levels of Logic = 1)
+  Source:            rst (FF)
+  Destination:       Led<0> (PAD)
+  Source Clock:      debounce/out rising
+
+  Data Path: rst to Led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q           2234   0.447   2.503  rst (rst)
+     OBUF:I->O                 2.571          Led_0_OBUF (Led<0>)
+    ----------------------------------------
+    Total                      5.521ns (3.018ns logic, 2.503ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+clk                                |    7.065|    3.942|   10.353|         |
+control/Op[5]_Funct[5]_Select_181_o|         |         |    3.678|         |
+control/Op[5]_Funct[5]_Select_97_o |         |         |    1.778|         |
+debounce/out                       |    3.380|         |    5.478|         |
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock compare1/res_0_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.339|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock compare2/res_0_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    7.404|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock control/Op[5]_Funct[5]_Select_181_o
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+clk             |         |         |    4.951|         |
+compare1/res_0_G|         |         |    3.363|         |
+compare2/res_0_G|         |         |    3.274|         |
+debounce/out    |         |         |    3.380|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock control/Op[5]_Funct[5]_Select_97_o
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+clk             |         |         |    4.557|         |
+compare2/res_0_G|         |         |    3.679|         |
+debounce/out    |         |         |    3.380|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock debounce/out
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+debounce/out   |    3.380|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock seg1/Mram__n01728
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    5.424|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 40.26 secs
+ 
+--> 
+
+Total memory usage is 329284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  429 (   0 filtered)
+Number of infos    :   27 (   0 filtered)
+

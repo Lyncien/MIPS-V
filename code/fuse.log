@@ -1,0 +1,71 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/test_isim_beh.exe -prj C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/dff.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/seg.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/regfile_copy_DMem.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/regfile.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/mux4.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/mux.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/MEMWB.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/ipcore_dir/IMem.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/ipcore_dir/DMem.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/IFID.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/IDEX.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/hazard.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/forward.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/EXMEM.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/debounce.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/control.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/compare.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/alu.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/top.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/test.v" into library work
+Analyzing Verilog file "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/test.v" Line 108: Port sw is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/top.v" Line 299: Size mismatch in connection of port <wAddr>. Formal port size is 5-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/top.v" Line 330: Size mismatch in connection of port <addra>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/top.v" Line 488: Size mismatch in connection of port <addra>. Formal port size is 9-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module debounce
+Compiling module seg
+Compiling module regfile_copy_DMem
+Compiling module mux4
+Compiling module dff
+Compiling module alu
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module IMem
+Compiling module IFID
+Compiling module control
+Compiling module mux(WIDTH=5)
+Compiling module regfile
+Compiling module compare
+Compiling module hazard
+Compiling module dff(WIDTH=5)
+Compiling module dff(WIDTH=1)
+Compiling module dff(WIDTH=2)
+Compiling module IDEX
+Compiling module forward
+Compiling module mux
+Compiling module EXMEM
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module DMem
+Compiling module MEMWB
+Compiling module top
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 22 sub-compilation(s) to finish...
+Compiled 33 Verilog Units
+Built simulation executable C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/test_isim_beh.exe
+Fuse Memory Usage: 34552 KB
+Fuse CPU Usage: 1419 ms

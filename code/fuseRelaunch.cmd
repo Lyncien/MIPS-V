@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/test_isim_beh.exe" -prj "C:/Users/Administrator/Desktop/PipelineCPU_20180606_1.21/PipelineCPU_20180606_1.21/PipelineCPU/test_beh.prj" "work.test" "work.glbl" 

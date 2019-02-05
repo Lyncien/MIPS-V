@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 07 01:46:11 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "btnd" LOCATE = SITE "C9" LEVEL 1;
+COMP "btnl" LOCATE = SITE "C4" LEVEL 1;
+COMP "btnr" LOCATE = SITE "D9" LEVEL 1;
+COMP "btns" LOCATE = SITE "B8" LEVEL 1;
+COMP "btnu" LOCATE = SITE "A8" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "seg7<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg7<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg7<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg7<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg7<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg7<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg7<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "Led<0>" LOCATE = SITE "U16" LEVEL 1;
+SCHEMATIC END;
+
